@@ -31,7 +31,7 @@ const Product = ({ product, onAddToCart }) => {
         </div>
         <Typography
           dangerouslySetInnerHTML={{ __html: product.description }}
-          varient="body2"
+          variant="body2"
           color="textSecondary"
         />
       </CardContent>
