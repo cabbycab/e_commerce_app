@@ -1,4 +1,5 @@
 import React from "react";
+import useStyles from "./styles";
 import {
   Typography,
   Button,
@@ -7,7 +8,6 @@ import {
   CardContent,
   CardMedia,
 } from "@material-ui/core";
-import useStyles from "./styles";
 
 const CartItem = ({ item, onUpdateCartQty, onRemoveFromCart }) => {
   const classes = useStyles();

@@ -1,4 +1,8 @@
 import React from "react";
+import { ShoppingCart } from "@material-ui/icons";
+import logo from "../../assets/commerce.png";
+import useStyles from "./styles";
+import { Link, useLocation } from "react-router-dom";
 import {
   AppBar,
   Toolbar,
@@ -8,10 +12,6 @@ import {
   Menu,
   Typography,
 } from "@material-ui/core";
-import { ShoppingCart } from "@material-ui/icons";
-import logo from "../../assets/commerce.png";
-import useStyles from "./styles";
-import { Link, useLocation } from "react-router-dom";
 
 const Navbar = ({ totalItems }) => {
   const classes = useStyles();
