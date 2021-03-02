@@ -4,7 +4,7 @@ import { Typography, List, ListItem, ListItemText } from "@material-ui/core";
 const Review = ({ checkoutToken }) => {
   return (
     <>
-      <Typography variant="h3" gutterBottom>
+      <Typography variant="h4" gutterBottom>
         Order Summary
       </Typography>
       <List disablePadding>
