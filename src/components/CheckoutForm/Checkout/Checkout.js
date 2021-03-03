@@ -34,8 +34,11 @@ const Checkout = ({ cart, order, onCaptureCheckout, error }) => {
         });
 
         setCheckoutToken(token);
-      } catch (error) {
-        history.pushState("/");
+        // } catch (error) {
+        //   history.pushState("/");
+        // }
+      } catch {
+        if (activeStep !== steps.length) history.push("/");
       }
     };
     generateToken();

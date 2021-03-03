@@ -64,6 +64,7 @@ const AddressForm = ({ checkoutToken, next }) => {
       { country, region }
     );
     setShippingOptions(options);
+    console.log(options);
     setShippingOption(options[0].id);
   };
 
