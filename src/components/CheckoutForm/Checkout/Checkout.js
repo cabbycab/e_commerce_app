@@ -41,7 +41,7 @@ const Checkout = ({ cart, order, onCaptureCheckout, error }) => {
         if (activeStep !== steps.length) history.push("/");
       }
     };
-    generateToken();
+    generateToken(); // eslint-disable-next-line
   }, [cart]);
 
   const nextStep = () => setActiveStep((prevActiveStep) => prevActiveStep + 1);
