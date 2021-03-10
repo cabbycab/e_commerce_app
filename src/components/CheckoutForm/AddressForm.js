@@ -54,17 +54,31 @@ const AddressForm = ({ checkoutToken, next }) => {
     setShippingSubdivision(Object.keys(subdivisions)[0]);
   };
 
+  // const fetchShippingOptions = async (
+  //   checkoutTokenId,
+  //   country,
+  //   region = null
+  // ) => {
+  //   const options = await commerce.checkout.getShippingOptions(
+  //     checkoutTokenId,
+  //     { country, region }
+  //   );
+  //   setShippingOptions(options);
+  //   console.log(options);
+  //   setShippingOption(options[0].id);
+  // };
+
   const fetchShippingOptions = async (
     checkoutTokenId,
     country,
-    region = null
+    stateProvince = null
   ) => {
     const options = await commerce.checkout.getShippingOptions(
       checkoutTokenId,
-      { country, region }
+      { country, region: stateProvince }
     );
+
     setShippingOptions(options);
-    console.log(options);
     setShippingOption(options[0].id);
   };
 
